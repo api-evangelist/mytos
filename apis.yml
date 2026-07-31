@@ -1,7 +1,29 @@
 aid: mytos
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/mytos.png
 name: Mytos
-description: Mytos is a company surfaced as a portfolio company of wing-venture-capital and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Mytos is a contract development and manufacturing organization (CDMO) for
+  regenerative medicine and cell therapy. Its iDEM automation platform automates
+  every unit operation of cell culture — coating, seeding, feeding, imaging,
+  passaging and harvesting — in standard 2D T-flask formats, letting
+  clinical-stage biotech companies transfer their manual protocols to automated
+  GMP production at up to 50% lower batch cost, with 10x less labor and cleanroom
+  footprint per batch. Mytos operates a CDMO facility within the Cell and Gene
+  Therapy Catapult site and is backed by Wing Venture Capital. No public
+  developer/API surface was found during enrichment; the profile captures the
+  company's verified security posture (trust center, SOC 2/SOC 3/21 CFR Part 11,
+  domain security, vulnerability disclosure).
 url: https://raw.githubusercontent.com/api-evangelist/mytos/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +33,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Biotechnology
+- Cell Therapy
+- Regenerative Medicine
+- Manufacturing Automation
+- CDMO
+- Life Sciences
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +51,18 @@ maintainers:
 common:
 - type: Website
   url: https://www.mytos.bio/
+- type: TrustCenter
+  url: security/mytos-trust-center.yml
+- type: Compliance
+  url: https://trust.mytos.bio/
+- type: Security
+  url: https://trust.mytos.bio/
+- type: VulnerabilityDisclosure
+  url: security/mytos-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/mytos-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v1
